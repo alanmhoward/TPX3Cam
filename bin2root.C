@@ -4,6 +4,7 @@
 // i.e. six eight-byte values (x, y, time, photon count, PSD parameter, null)
 
 // root -q -b 'bin2root.C("filename.xxx.exported")'
+// // for file in *.exported; do root -q -b 'bin2root.C("'$file'")'; done
 
 int bin2root(TString filename, int debug=0){
 	
