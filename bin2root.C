@@ -3,6 +3,8 @@
 // od -w48 -tf8 filename
 // i.e. six eight-byte values (x, y, time, photon count, PSD parameter, null)
 
+// root -q -b 'bin2root.C("filename.xxx.exported")'
+
 int bin2root(TString filename, int debug=0){
 	
 	// Print extra info
